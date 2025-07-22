@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PAWFFECT NEEST - Online Pet Store</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">PAWFFECT NEEST</div>
+      <nav class="navbar">
+        <a href="#categories">Categories</a>
+        <a href="#products">Products</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="cart-container">
+        <button id="cart-btn" aria-label="View Cart">
+          🛒 Cart (<span id="cart-count">0</span>)
+        </button>
+      </div>
+    </header>
+
+    <section class="hero">
+      <h1>Welcome to PAWFFECT NEEST</h1>
+      <p>Your one-stop shop for all your pet needs</p>
+    </section>
+
+    <section id="categories" class="categories">
+      <h2>Shop by Category</h2>
+      <div class="category-grid">
+        <div class="category-card" data-category="dog">Dog</div>
+        <div class="category-card" data-category="cat">Cat</div>
+        <div class="category-card" data-category="bird">Bird</div>
+        <div class="category-card" data-category="all">All</div>
+      </div>
+    </section>
+
+    <section id="products" class="products">
+      <h2>Featured Products</h2>
+      <div id="product-list" class="product-grid"></div>
+    </section>
+
+    <section id="about" class="about">
+      <h2>About Us</h2>
+      <p>We care for your pets like family. Quality products for happy pets!</p>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact Us</h2>
+      <form id="contact-form">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" rows="4" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <footer class="footer">
+      <p>© 2025 PAWFFECT NEEST. All rights reserved.</p>
+    </footer>
+
+    <!-- Cart modal popup -->
+    <div id="cart-modal" class="cart-modal hidden">
+      <div class="cart-content">
+        <h2>Your Cart</h2>
+        <ul id="cart-items"></ul>
+        <p id="cart-empty-msg">Your cart is empty.</p>
+        <button id="close-cart">Close</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
